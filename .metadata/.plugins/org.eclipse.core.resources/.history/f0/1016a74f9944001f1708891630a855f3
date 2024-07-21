@@ -1,0 +1,19 @@
+package nuisance;
+
+public class Mosquito extends Insect implements Nuisance{
+
+	public Mosquito(String species) {
+		super(species);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void annoy() {
+		System.out.println("buzz buzz buzz");
+		
+	}
+	public String buzz() {
+		return super.getSpecies() + " buzzing around";
+	}
+
+}

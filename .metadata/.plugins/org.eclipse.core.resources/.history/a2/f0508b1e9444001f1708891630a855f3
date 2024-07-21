@@ -1,0 +1,6 @@
+package interfaces;
+
+public enum Hobby {
+	MUSIC, SPORTS, GAMES;
+
+}

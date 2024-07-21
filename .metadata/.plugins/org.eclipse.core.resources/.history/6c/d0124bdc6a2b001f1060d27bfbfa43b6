@@ -1,0 +1,13 @@
+package doc_comments;
+
+public class TravelApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car m4 = new Car("BMW", "M4", 25);
+		Car Civic = new Car("Honda", "Civic", 42);
+		System.out.println("car 1 : " + m4.getMake());
+
+	}
+
+}

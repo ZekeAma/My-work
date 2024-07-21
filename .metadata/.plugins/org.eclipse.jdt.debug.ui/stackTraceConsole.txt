@@ -1,0 +1,10 @@
+java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at l410_LABS/abstractClass.InkjetPrinterTest.<init>(InkjetPrinterTest.java:55)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

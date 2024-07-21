@@ -1,0 +1,32 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PlaneTest {
+
+
+	@Test
+	void testPlane() {
+		Plane plane = new Plane(4, "Boeing 747");
+        assertEquals("Boeing 747 with 4 engines", plane.toString());
+    }
+
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testLand() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testLaunch() {
+		fail("Not yet implemented");
+	}
+
+}

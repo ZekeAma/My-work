@@ -1,0 +1,49 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.jupiter.api.Test;
+
+class PlaneTest {
+
+
+	@Test
+	void testPlane() {
+		Plane plane = new Plane(4, "Boeing 747");
+        assertEquals("Boeing 747 with 4 engines", plane.toString());
+    }
+
+
+	
+	  @Test
+	    void testLand() {
+	        Plane plane = new Plane(4, "Boeing 747");
+	        
+	        // Capture the output
+	        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	        System.setOut(new PrintStream(outContent));
+	        
+	        plane.land();
+	        
+	        // Verify the output
+	        assertEquals("Rolling to a stop", outContent.toString());
+	        
+	        // Restore the original System.out
+	        System.setOut(System.out);
+	    }
+
+
+	@Test
+	void testLaunch() {
+		Plane plane = new Plane(2, "FireHouse subs airliner");
+		
+		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+		System.setOut(new PrintStream(outContent));
+		plane.launch();
+		
+		assertEquals("Rolling until take-off", outContent.toString());
+	}
+
+}

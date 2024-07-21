@@ -1,0 +1,39 @@
+package phones;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class DeskPhoneTest {
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDeskPhone() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testPlugIn() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUnPlug() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testIsConnected() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testConnectionInfo() {
+		fail("Not yet implemented");
+	}
+
+}

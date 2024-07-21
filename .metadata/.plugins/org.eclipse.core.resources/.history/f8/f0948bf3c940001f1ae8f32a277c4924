@@ -1,0 +1,19 @@
+package phones;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class RotaryPhoneTest {
+
+	@Test
+	void testCall() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRotaryPhone() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,24 @@
+package Guitar;
+/**
+ * 
+ * @author zeke
+ * defines the type of guitar in the class
+ * 
+ */
+public class Guitars {
+public boolean electric; 
+private int numberOfStrings;
+/**
+ * @param electric
+ * @param numberOfStrings
+ */
+public Guitars(boolean electric, int numberOfStrings) {
+	this.electric = electric;
+	this.numberOfStrings = numberOfStrings;
+     }
+@Override
+public String toString() {
+	return "Guitars [electric=" + electric + ", numberOfStrings=" + numberOfStrings + "]";
+}
+
+}

@@ -1,0 +1,24 @@
+package nuisance;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MosquitoTest {
+
+	@Test
+	void testMosquito() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAnnoy() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testBuzz() {
+		fail("Not yet implemented");
+	}
+
+}

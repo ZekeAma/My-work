@@ -1,0 +1,57 @@
+package phones;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class DeskPhoneTest {
+private DeskPhone PushButtonPhone;
+private DeskPhone RotaryPhone;
+@BeforeEach
+void setUp() throws Exception {
+PushButtonPhone = new PushButtonPhone(
+"JeKaVis J-P45", new Dimension(85, 85, 28), Voltage.DUAL);
+RotaryPhone = new RotaryPhone(
+"Pyle PRT45", new Dimension(205, 135, 92), Voltage.V110);
+}
+@Test
+void deskPhone_initializeTheFields() {
+DeskPhone p = new RotaryPhone(
+"Model 500", new Dimension(143, 208, 119), Voltage.V110);
+assertFalse(p.isConnected());
+assertEquals("Model 500 (143.0 x 208.0 x 119.0) V110 not connected",
+p.toString());
+}
+@Test
+void plugIn_connectPhone() {
+pushButtonPhone.PlugIn();
+assertTrue(pushButtonPhone.isConnected());
+rotaryPhone.PlugIn();
+assertTrue(rotaryPhone.isConnected());
+}
+@Test
+void unplug_disconnectPhone() {
+pushButtonPhone.unplug();
+assertFalse(pushButtonPhone.isConnected());
+rotaryPhone.unplug();
+assertFalse(rotaryPhone.isConnected());
+}
+@Test
+void isConnected_pluggedIn_returnTrue() {
+pushButtonPhone.PlugIn();
+assertTrue(pushButtonPhone.isConnected());
+}
+@Test
+void isConnected_unplugged_returnFalse() {
+rotaryPhone.unplug();
+assertFalse(rotaryPhone.isConnected());
+}
+@Test
+void toString_returnsModelDimensionVoltageAndConnectionInfo() {
+assertEquals("JeKaVis J-P45 (85.0 x 85.0 x 28.0) DUAL not connected",
+pushButtonPhone.toString());
+rotaryPhone.PlugIn();
+assertEquals("Pyle PRT45 (205.0 x 135.0 x 92.0) V110 connected",
+rotaryPhone.toString());
+}
+}
+

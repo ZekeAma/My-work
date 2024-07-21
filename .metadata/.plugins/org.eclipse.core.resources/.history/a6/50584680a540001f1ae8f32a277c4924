@@ -1,0 +1,19 @@
+package phones;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PushButtonPhoneTest {
+
+	@Test
+	void testCall() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testPushButtonPhone() {
+		fail("Not yet implemented");
+	}
+
+}

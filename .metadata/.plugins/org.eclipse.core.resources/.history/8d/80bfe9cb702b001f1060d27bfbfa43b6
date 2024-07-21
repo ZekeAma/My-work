@@ -1,0 +1,43 @@
+package doc_comments;
+/*
+ * This class will be able to get the make, model and mpg
+ * @author Ezequiel Amaral
+ */
+
+public class Car {
+	private String make;
+	private String model;
+	private int mpg;
+	/**
+	 * Constructor initizilizes fields 
+	 * @param make Chooses the make of the car
+	 * @param model chooses the model of the car 
+	 * @param mpg   chooses the mpg of the car
+	 */
+	public Car(String make, String model, int mpg) {
+		this.make = make;
+		this.model = model;
+		this.mpg = mpg;
+	}
+	/**
+	 * @return the make
+	 */
+	public String getMake() {
+		return make;
+	}
+	/**
+	 * @return the model
+	 */
+	public String getModel() {
+		return model;
+	}
+	/**
+	 * @return the mpg
+	 */
+	public int getMpg() {
+		return mpg;
+	}
+	
+	
+
+}

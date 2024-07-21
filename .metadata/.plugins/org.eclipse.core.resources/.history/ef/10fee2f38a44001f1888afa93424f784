@@ -1,0 +1,6 @@
+module I410_Interface {
+    requires org.junit.jupiter.api;
+    requires org.junit.jupiter.engine;
+    requires org.junit.jupiter.params; // If you use parameterized tests
+    exports interfaces; // Adjust the package to be exported as necessary
+}

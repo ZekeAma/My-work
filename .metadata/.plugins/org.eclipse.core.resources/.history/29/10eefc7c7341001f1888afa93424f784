@@ -1,0 +1,29 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PlaneTest {
+
+	@Test
+	void testPlane() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testLand() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testLaunch() {
+		fail("Not yet implemented");
+	}
+
+}

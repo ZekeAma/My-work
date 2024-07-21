@@ -1,0 +1,40 @@
+
+package phones;
+import java.util.Random;
+
+
+public class SmartPhone extends Phone{
+	private int Storage;
+
+	public SmartPhone(String model, Dimension dimension, int Storage) {
+		super(model, dimension);
+		if(Storage < 0) {
+			throw new IllegalArgumentException("Storage needs to be assigned a positve value"); 
+		}
+		this.Storage = Storage;
+		// TODO Auto-generated constructor stub
+	}
+	public String Call(long number) {
+		return "Calling " + number + " by selecting the number";
+	}
+	
+
+	public String browse() {
+		return "Browsing the web";
+	}
+	public String takePicture() {
+	 String[] strings = { "Taking a horizontel pictures.", "Taking a veritcal picture." };
+	 Random random = new Random();
+	 int randomIndex = random.nextInt(strings.length);
+	 String randomString = strings[randomIndex];
+	 
+	return randomString;
+	}
+
+	@Override
+	public String toString() {
+		return super.model +  " " +super.dimension + " "+ Storage + "GB";
+	}
+	
+
+}

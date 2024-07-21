@@ -1,0 +1,34 @@
+package phones;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SmartPhoneTest {
+
+	@Test
+	void testCall() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSmartPhone() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testBrowse() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTakePicture() {
+		fail("Not yet implemented");
+	}
+
+}

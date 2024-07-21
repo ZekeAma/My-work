@@ -1,0 +1,17 @@
+package phones;
+
+public class PushButtonPhone extends DeskPhone {
+
+	
+		public PushButtonPhone(String model, Dimension dimension, Voltage voltage) {
+		super(model, dimension, voltage);
+		// TODO Auto-generated constructor stub
+	}
+
+		// TODO Auto-generated constructor stub
+	
+	public String Call(long number) {
+return "Pushing buttons to call" + number;
+
+}
+}

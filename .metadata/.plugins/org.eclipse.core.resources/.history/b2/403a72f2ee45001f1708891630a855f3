@@ -1,0 +1,61 @@
+package phones;
+
+import java.util.Random;
+
+public class TestClient {
+
+	public static void main(String[] args) {
+		
+		Dimension Model_500D = new Dimension(143,208, 119);
+		Dimension Cortelco_2500D = new Dimension(178, 228, 127);
+		Dimension Pixel_3 = new Dimension(138.4, 68.2, 7.9);
+		Dimension iphone_8 = new Dimension(138.4, 67.3, 7.3);
+		Voltage voltage110 = Voltage.V110;
+		Voltage voltage220 = Voltage.DUAL;
+		RotaryPhone Model_500 = new RotaryPhone("Model 500", Model_500D, voltage110.V110 );
+		PushButtonPhone Cortelco_2500 = new PushButtonPhone("Coterlco 2500", Cortelco_2500D, voltage220);
+		SmartPhone Pixel3 = new SmartPhone("Pixel13", Pixel_3, 128);
+		SmartPhone iphone8 = new SmartPhone("iphone 8", iphone_8, 64);
+		System.out.println("Various Phones: ");
+		System.out.println(Model_500.toString());
+		System.out.println(Cortelco_2500.toString());
+		System.out.println(Pixel3.toString());
+		System.out.println(iphone8.toString());
+		System.out.println();
+		
+		Model_500.PlugIn();
+		Cortelco_2500.PlugIn();
+		Random random = new Random();
+		int choice = random.nextInt(2);
+		
+		if (choice == 0) 
+		{ Model_500.unPlug();
+		}else {
+		  Cortelco_2500.unPlug();
+		}
+		Phone[] phone = {Model_500, Cortelco_2500, Pixel3, iphone8};
+		System.out.println("Array Elements");
+		
+		for(Phone Phones: phone) {
+		System.out.println(Phones.toString());
+	    long phoneNumber = 8019574111L;
+	    String calls = Phones.Call(phoneNumber);
+	   System.out.println(calls);
+	   if(Phones instanceof SmartPhone ) {
+		  System.out.println(((SmartPhone) Phones).browse() );
+		 System.out.println(((SmartPhone) Phones).takePicture() );
+		   
+	   }
+	   System.out.println();
+
+	   
+	    
+			
+		}
+		
+	
+
+	}
+
+}
+ 

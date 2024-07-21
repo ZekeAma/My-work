@@ -1,0 +1,19 @@
+package labInterface;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import abstractClass.InkjetPrinter;
+
+class PlaneTest {
+
+	void testString_() {
+		Plane p = new Plane(2, "Canon Pixma");
+		assertEquals("Rolling to a stop", p.land());
+		}
+
+
+
+	
+}

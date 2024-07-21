@@ -1,0 +1,16 @@
+package phones;
+
+public class RotaryPhone extends DeskPhone {
+
+	
+	protected RotaryPhone(String model, Dimension dimension, Voltage voltage) {
+		super(model, dimension, voltage);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String Call(long number) {
+		return "Rotating the dial to call " + number;
+	}
+	
+
+}

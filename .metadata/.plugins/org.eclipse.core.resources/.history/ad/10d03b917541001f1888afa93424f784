@@ -1,0 +1,34 @@
+package labInterface;
+
+public class Plane implements Flyable
+{
+	private final int numberOfEngines;
+	private final String model;
+
+	public Plane(int engines, String m)
+	{
+		numberOfEngines = engines;
+		model = m;
+	}
+
+	@Override
+	public String toString()
+	{
+		return String.format("%s with %d engines", model, numberOfEngines);
+	}
+
+	@Override
+	public void land() {
+		// TODO Auto-generated method stub
+		String status = "Rolling to a stop";
+		
+		
+	}
+
+	@Override
+	public void launch() {
+		// TODO Auto-generated method stub
+		
+		String status = "Rolling until take-off";
+	}
+}

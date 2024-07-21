@@ -1,0 +1,51 @@
+package phones;
+/**
+ * this class is representative of the Dimensions of the phone height,
+ * width and depth.
+ * 
+ */
+
+public class Dimension {
+	private double height;
+	private double width;
+	private double depth;
+	/**
+	 * @param height
+	 * @param width
+	 * @param depth
+	 */
+	public Dimension(double height, double width, double depth) {
+		if(width < 0 || height < 0|| depth < 0) {
+			throw new IllegalArgumentException("the height width, and depth of a dimension needs to be positive");
+			}
+		this.height = height;
+		this.width = width;
+		this.depth = depth;
+	}
+	/**
+	 * @return the height
+	 */
+	public double getHeight() {
+	
+		return height;
+	}
+	/**
+	 * @return the width
+	 */
+	public double getWidth() {
+		
+		return width;
+	}
+	/**
+	 * @return the depth
+	 */
+	public double getDepth() {
+		
+		return depth;
+	}
+	@Override
+	public String toString() {
+		return " (" + height + " X " + width + " " + depth + ")";
+	}
+
+}

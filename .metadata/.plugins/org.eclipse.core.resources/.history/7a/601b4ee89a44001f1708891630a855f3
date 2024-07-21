@@ -1,0 +1,29 @@
+package nuisance;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ButterFlyTest {
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testButterFlyStringListOfString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testButterFlyButterFly() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetColors() {
+		fail("Not yet implemented");
+	}
+
+}
